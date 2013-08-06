@@ -1,0 +1,333 @@
+/* 
+ * Zeray Rice's Resume Style
+ * Author: Zeray Rice
+ * Email: fanzeyi1994@gmail.com
+ * Last Modified: Mar 29, 2013
+ */
+
+@font-face {
+	font-family: 'Conv_ResumeIcon-Regular';
+	src: url('fonts/ResumeIcon-Regular.eot');
+	src: local('☺'), url('fonts/ResumeIcon-Regular.ttf') format('truetype'), url('fonts/ResumeIcon-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body, input, textarea {
+	font-family: 'Roboto', sans-serif;
+    color: #043E52;
+    font-weight: 200; 
+}
+
+a {
+    color: #043E52; 
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+html, body {
+    background-color: #FAFAFD; 
+/*    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;*/
+}
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.warp {
+    width: 720px; 
+    margin: 0 auto; 
+    margin-bottom: 50px;  
+}
+
+.name {   
+    color: #0C6A8A; 
+    font-size: 2.5em; 
+    width: 340px; 
+    text-align: center; 
+    margin: 80px auto; 
+}
+
+.about p {
+	font-size: 0.9em;
+}
+
+.icon {
+    font-size-adjust: none;
+	font-family: "Conv_ResumeIcon-Regular";
+    font-weight: normal;
+    font-style: normal;
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -moz-font-feature-settings: "liga=1";
+    -ms-font-feature-settings: "liga" 1;
+    -ms-font-feature-settings: "liga", "dlig";
+}
+
+.contact span.icon-mail {
+    font-size: 32px; 
+}
+
+.contact span.icon-mail:hover {
+    color: #f4bc4e; 
+}
+
+.contact span.icon-twitter {
+    margin-left: 10px; 
+    font-size: 32px; 
+}
+
+.contact span.icon-twitter:hover {
+    color: #00aced; 
+}
+
+.subtitle {
+    margin: 0; 
+    padding-bottom: 10px; 
+    font-weight: normal; 
+    color: #777; 
+    border-bottom: 1px solid rgba(0, 0, 0, .1);; 
+    font-size: 1em; 
+}
+
+.subtitle:before {
+    font-size-adjust: none;
+	font-family: "Conv_ResumeIcon-Regular";
+    font-weight: normal;
+    font-style: normal;
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -moz-font-feature-settings: "liga=1";
+    -ms-font-feature-settings: "liga" 1;
+    -ms-font-feature-settings: "liga", "dlig";
+    font-size: 32px; 
+    padding: 0 10px; 
+}
+
+.subtitle.about:before {
+    content: "A"; 
+    color: #f4bc4e; 
+}
+
+.subtitle.skills:before {
+    content: "B";
+    color: #F2674C; 
+}
+
+section p {
+    line-height: 1.6;
+    text-indent: 0.5em; 
+}
+
+.skill-name {
+	font-size: 0.9em;
+}
+
+.skills-tree {
+    margin: 0; 
+    padding: 0; 
+    margin: 20px 0; 
+}
+
+.skills-tree li {
+    list-style: none; 
+    margin: 10px 0; 
+    padding: 15px 10px; 
+    -webkit-transition: background-color .5s ease;
+    -moz-transition: background-color .5s ease;
+    -o-transition: background-color .5s ease;
+    transition: background-color .5s ease;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+.skills-tree li:hover {
+    background-color: #F6F7F9; 
+}
+
+.skills-tree li:hover .skill-progress span {
+    animation-play-state: running; 
+    -webkit-animation-play-state: running; 
+}
+
+@-webkit-keyframes animate-stripes { 
+    0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+}
+
+@-moz-keyframes animate-stripes {
+    0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+}
+
+.skill-progress {
+    display: inline-block; 
+    background-color: #E9EBEF;
+    height: 25px;
+    padding: 0; 
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    float: right; 
+    width: 360px; 
+}
+
+.skill-progress span {
+    display: inline-block;
+    height: 100%;	
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+    background-color: #57b3b4; 
+    -webkit-background-size: 30px 30px;
+    -moz-background-size: 30px 30px;
+    background-size: 30px 30px;			
+    background-image: -webkit-gradient(linear, left top, right bottom,
+                                       color-stop(.25, rgba(255, 255, 255, .15)), color-stop(.25, transparent),
+                                       color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .15)),
+                                       color-stop(.75, rgba(255, 255, 255, .15)), color-stop(.75, transparent),
+                                       to(transparent));
+    background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                                              transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                                              transparent 75%, transparent);
+    background-image: -moz-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                                           transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                                           transparent 75%, transparent);
+    background-image: -ms-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                                          transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                                          transparent 75%, transparent);
+    background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                                         transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                                         transparent 75%, transparent);
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+                                      transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+                                      transparent 75%, transparent);      
+    -webkit-animation: animate-stripes 3s linear infinite;
+    -moz-animation: animate-stripes 3s linear infinite;
+    animation-play-state:paused;
+    -webkit-animation-play-state:paused;
+}
+
+.subtitle.projects:before {
+    content: "C"; 
+    color: #5e544b; 
+}
+
+.project-list {
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+}
+
+.project-list li {
+    padding: 20px 0 0 0;
+    margin: 0 20px; 
+    border-bottom: 1px solid rgba(0, 0, 35, .1); 
+}
+
+.project-list li .language {
+    float: right; 
+    font-size: 0.7em; 
+    color: #BBB; 
+}
+
+.project-list li:last-child {
+    border-bottom: none; 
+}
+
+.project-description p {
+    text-indent: 0; 
+    font-size: 0.8em; 
+}
+
+.subtitle.achievement:before {
+    content: "D"; 
+    color: #33B5E5; 
+}
+
+.achievement-list {
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+}
+
+.achievement-list li {
+    padding: 20px 0 0 0;
+    margin: 0 20px; 
+    border-bottom: 1px solid rgba(0, 0, 35, .1); 
+}
+
+.achievement-list li .time {
+	float: right; 
+    font-size: 0.8em; 
+    color: #BBB; 
+}
+
+.achievement-list li:last-child {
+    border-bottom: none; 
+}
+
+.achievement-description p {
+    text-indent: 0; 
+    font-size: 0.8em; 
+}
+
+.achievement-name {
+    font-size: 1em; 
+}
+
+.subtitle.links:before {
+    content: "E"; 
+    color: #AD99C8; 
+}
+
+.links-list {
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+    margin: 20px 20px; 
+}
+
+.links-list li {
+    margin: 20px 0; 
+    font-size: .8em; 
+}
+
+.eof {
+    text-align: center; 
+    margin-bottom: 50px; 
+    color: #CCC; 
+}
+
+.project-name {
+    font-size: 1.0em; 
+}
+
+.link-name {
+    display: inline-block; 
+    width: 100px; 
+}
+
+.link-content a {
+    color: #45565F; 
+}
+
+
